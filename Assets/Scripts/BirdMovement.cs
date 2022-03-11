@@ -22,7 +22,7 @@ public class BirdMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Bird"))
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             gamemanager.gameover = true;
             Destroy(gameObject);
